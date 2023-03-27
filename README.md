@@ -32,20 +32,20 @@ Testing is an important aspect of software development that helps ensure the rel
 
 ```python manage.py test WebNovels```
 
-Testing Forms, Views, and Models in Django
+## <ins> Testing Forms, Views, and Models: </ins>
 
 This Django project includes automated tests for the forms, views, and models used in the application. These tests help ensure that the application behaves correctly and responds appropriately to user input and system events.
 
-## Testing Forms
+### Testing Forms
 Forms are an essential part of any web application, and it's essential to ensure that they work correctly. The tests for forms are located in the "tests/test_forms". These tests check whether the forms can validate and handle various types of user input, such as invalid or missing data, and they ensure that the form's behavior is consistent with the application's requirements.
 
-## Testing Views
+### Testing Views
 Views are responsible for handling user requests and returning responses. The tests for views are located in the "tests/test_views". These tests verify that the views are returning the correct HTTP response status codes, handling invalid input data appropriately, and rendering the correct templates.
 
-## Testing Models
+### Testing Models
 Models are the backbone of the application's data management. The tests for models are located in the "tests/tests_models". These tests verify the behavior of the models, including whether they can be created, updated, and deleted correctly, and whether they correctly validate input data and enforce constraints.
 
-## Conclusion
+### Conclusion
 
 Writing automated tests is an essential part of ensuring the reliability and stability of your Django application. By testing your forms, views, and models, you can ensure that your application is functioning as intended, even as it evolves and changes over time. We encourage all developers to write tests for any new features or changes they make to the codebase to maintain the high quality of our application.
 
