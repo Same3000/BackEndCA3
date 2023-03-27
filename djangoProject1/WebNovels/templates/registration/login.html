@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+</head>
+<body>
+    {% block title %}Login{% endblock %}
+    {% block content %}
+    <form method="post">
+      {% csrf_token %}
+      {{ form.as_p }}
+      <button type="submit">Log In</button>
+    </form>
+        <a href="{% url 'WebNovels:signup' %}">Sign Up</a>
+    {% endblock %}
+</body>
+</html>

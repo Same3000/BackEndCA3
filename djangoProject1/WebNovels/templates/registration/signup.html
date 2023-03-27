@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    {% extends "WebNovels/base.html" %}
+
+    {% block title %}Sign Up{% endblock %}
+
+    {% block content %}
+      <h2>Sign up</h2>
+      <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Sign Up</button>
+      </form>
+        <h2>Already Have an Account</h2>
+        <a href="{% url 'login' %}">Sign Up</a>
+    {% endblock %}
+</body>
+</html>
